@@ -1,26 +1,30 @@
-//calculating simple intrest
-#include <stdio.h> scanf() , printf()
-int main(){
-	amount =b;
-	time =c;
-	rate =d;
-	simple_intrest;
-		
-	printf("enter  amount: ");
-	scanf("%lf",&b);
-printf("the amount is %lf \n",b);
+#include <stdio.h>
 
-	printf("enter time: ");
-	scanf("%d",&c);
-printf("the time is %d \n",c);
+int main() {
+    double amount, rate, simple_interest;
+    int time;
 
-	printf("enter time: ");
-	scanf("%f",&);
-printf("the character is %f \n",d);
+    // Prompt for amount
+    printf("Enter the amount: ");
+    scanf("%lf", &amount);
+    printf("The amount is: %.2lf\n", amount);
 
-simple_intrest=("amount*time*rate)/100 \n");
+    // Prompt for time
+    printf("Enter time (in years): ");
+    scanf("%d", &time);
+    printf("The time is: %d years\n", time);
 
-printf("the simple intrest is %d \n",simple_intrest);
+    // Prompt for rate
+    printf("Enter rate (as a percentage): ");
+    scanf("%lf", &rate);
+    printf("The rate is: %.2lf%%\n", rate);
 
-return 0;
+    // Calculate simple interest
+    simple_interest = (amount * time * rate) / 100;
+
+    // Display the simple interest
+    printf("The simple interest is: %.2lf\n", simple_interest);
+
+    return 0;
 }
+
